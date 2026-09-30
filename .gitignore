@@ -10,12 +10,16 @@
 # ─────────────────────────────────────────────────────────────────────────
 
 # 바이트 컴파일 파일들
-__pycache__/              # Python이 자동 생성하는 캐시 폴더
-*.py[cod]                 # .pyc, .pyo, .pyd 파일
-*$py.class                # 클래스 바이트 컴파일 파일
+# Python이 자동 생성하는 캐시 폴더
+__pycache__/
+# .pyc, .pyo, .pyd 파일
+*.py[cod]
+# 클래스 바이트 컴파일 파일
+*$py.class
 
 # C 확장 모듈
-*.so                      # 공유 라이브러리 파일
+# 공유 라이브러리 파일
+*.so
 
 # 패키지 빌드 파일
 .Python
@@ -42,7 +46,8 @@ MANIFEST
 # 🔧 Virtual Environment (가상환경)
 # ─────────────────────────────────────────────────────────────────────────
 
-venv/                     # Python 가상환경
+# Python 가상환경
+venv/
 ENV/
 env/
 .venv
@@ -58,21 +63,27 @@ venv.bak/
 # 📓 Jupyter Notebook 캐시
 # ─────────────────────────────────────────────────────────────────────────
 
-.ipynb_checkpoints/       # Jupyter 자동 저장 폴더
-*.ipynb_checkpoints       # 체크포인트 파일
-.jupyter/                 # Jupyter 설정 폴더
+# Jupyter 자동 저장 폴더
+.ipynb_checkpoints/
+# 체크포인트 파일
+*.ipynb_checkpoints
+# Jupyter 설정 폴더
+.jupyter/
 
 # ─────────────────────────────────────────────────────────────────────────
 # 💻 IDE & 에디터 설정 (VS Code, PyCharm 등)
 # ─────────────────────────────────────────────────────────────────────────
 
 # VS Code
-.vscode/                  # VS Code 설정
+# VS Code 설정
+.vscode/
 *.code-workspace
 
 # PyCharm / IntelliJ
-.idea/                    # IDE 설정
-*.iml                     # IntelliJ 프로젝트 파일
+# IDE 설정
+.idea/
+# IntelliJ 프로젝트 파일
+*.iml
 out/
 
 # Sublime Text
@@ -80,7 +91,8 @@ out/
 *.sublime-workspace
 
 # Vim
-*.swp                     # Vim 스왑 파일
+# Vim 스왑 파일
+*.swp
 *.swo
 
 # Emacs
@@ -92,19 +104,24 @@ out/
 # ─────────────────────────────────────────────────────────────────────────
 
 # Pickle & Serialized Models
-*.pkl                     # Python Pickle 파일
+# Python Pickle 파일
+*.pkl
 *.pickle
 *.joblib
 
 # Deep Learning Models
-*.h5                      # Keras 모델 파일
+# Keras 모델 파일
+*.h5
 *.hdf5
-*.pt                      # PyTorch 모델
+# PyTorch 모델
+*.pt
 *.pth
-*.onnx                    # ONNX 모델
+# ONNX 모델
+*.onnx
 
 # TensorFlow
-*.pb                      # TensorFlow SavedModel
+# TensorFlow SavedModel
+*.pb
 checkpoint/
 saved_models/
 
@@ -135,7 +152,8 @@ predictions/
 
 # 로그 파일
 logs/
-*.log                     # 모든 로그 파일
+# 모든 로그 파일
+*.log
 
 # Weights & Biases (실험 추적)
 wandb/
@@ -149,8 +167,10 @@ runs/
 # 🔐 환경 변수 및 개인정보
 # ─────────────────────────────────────────────────────────────────────────
 
-.env                      # 환경 변수 (API 키, 비밀번호 등)
-.env.local                # 로컬 환경 변수
+# 환경 변수 (API 키, 비밀번호 등)
+.env
+# 로컬 환경 변수
+.env.local
 .env.*.local
 .env.development
 .env.production
@@ -165,16 +185,20 @@ secrets/
 # ─────────────────────────────────────────────────────────────────────────
 
 # macOS
-.DS_Store                 # Mac 폴더 정보
+# Mac 폴더 정보
+.DS_Store
 .AppleDouble
 .LSOverride
 .Spotlight-V100
 .Trashes
-._*                       # Mac 임시 파일
+# Mac 임시 파일
+._*
 
 # Windows
-$RECYCLE.BIN/             # Windows 휴지통
-ehthumbs.db               # 썸네일 캐시
+# Windows 휴지통
+$RECYCLE.BIN/
+# 썸네일 캐시
+ehthumbs.db
 Thumbs.db
 Desktop.ini
 
@@ -187,8 +211,10 @@ Desktop.ini
 
 # pytest
 .pytest_cache/
-.coverage                 # 코드 커버리지
-htmlcov/                  # HTML 커버리지 리포트
+# 코드 커버리지
+.coverage
+# HTML 커버리지 리포트
+htmlcov/
 .tox/
 
 # unittest
@@ -201,7 +227,8 @@ htmlcov/                  # HTML 커버리지 리포트
 
 *.tmp
 *.temp
-*.bak                     # 백업 파일
+# 백업 파일
+*.bak
 *.backup
 *.orig
 
@@ -234,7 +261,8 @@ Pipfile.lock
 
 # OS별 선호 파일
 .DS_Store
-.env.example              # 예제 파일은 저장
+# 예제 파일은 저장 (제외 대상에서 다시 포함)
+!.env.example
 
 # ============================================================================
 # 📌 주의사항
